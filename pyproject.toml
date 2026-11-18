@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datalens"
+version = "1.0.0"
+description = "High-performance data analyzer for datasets up to 2GB+"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "streamlit>=1.32.0",
+    "polars[streaming]>=0.20.0",
+    "duckdb>=0.10.0",
+    "numpy>=1.26.0",
+    "scipy>=1.12.0",
+    "plotly>=5.19.0",
+    "openpyxl>=3.1.0",
+    "pandas>=2.2.0",
+    "pyarrow>=15.0.0",
+    "reportlab>=4.0.0",
+    "kaleido>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "black>=23.0", "ruff>=0.1.0"]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/data-analyzer"
+Documentation = "https://github.com/yourusername/data-analyzer/blob/main/README.md"
