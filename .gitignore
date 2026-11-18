@@ -2,11 +2,19 @@
 __pycache__/
 *.py[cod]
 *.pyo
+*.py[codz]
+*$py.class
+
+# C extensions
+*.so
 
 # Virtual environments
 venv/
 .venv/
 env/
+ENV/
+env.bak/
+venv.bak/
 
 # Streamlit secrets
 .streamlit/secrets.toml
@@ -15,10 +23,14 @@ env/
 .env
 .env.*
 !.env.example
+.envrc
 
 # IDE files
 .vscode/
 .idea/
+.spyderproject
+.spyproject
+.ropeproject
 
 # OS files
 .DS_Store
@@ -27,22 +39,164 @@ desktop.ini
 
 # Logs
 *.log
+pip-log.txt
+pip-delete-this-directory.txt
 
 # Temporary files
 *.tmp
 *.temp
+tempCodeRunnerFile.py
 
 # ZIP backups
 *.zip
 
 # Jupyter
 .ipynb_checkpoints/
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
 
 # Python testing and coverage
 .pytest_cache/
 .coverage
+.coverage.*
 htmlcov/
+.tox/
+.nox/
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+*.lcov
+.hypothesis/
+cover/
 
-# Build files
+# Build and distribution files
 build/
 dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.Python
+lib/
+lib64/
+parts/
+sdist/
+share/python-wheels/
+target/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Django
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask
+instance/
+.webassets-cache
+
+# Scrapy
+.scrapy
+
+# Sphinx
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+
+# Translations
+*.mo
+*.pot
+
+# pyenv
+# .python-version
+
+# Pipenv
+# Pipfile.lock
+
+# uv
+# uv.lock
+
+# Poetry
+# poetry.lock
+# poetry.toml
+
+# PDM
+# pdm.lock
+# pdm.toml
+.pdm-python
+.pdm-build/
+
+# Pixi
+.pixi/*
+!.pixi/config.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery
+celerybeat-schedule*
+celerybeat.pid
+
+# Redis
+*.rdb
+*.aof
+*.pid
+
+# RabbitMQ
+mnesia/
+rabbitmq/
+rabbitmq-data/
+
+# ActiveMQ
+activemq-data/
+
+# SageMath
+*.sage.py
+
+# Conda
+conda-meta/
+
+# Mkdocs
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# pytype
+.pytype/
+
+# Cython
+cython_debug/
+
+# Abstra
+.abstra/
+
+# Ruff
+.ruff_cache/
+
+# PyPI configuration
+.pypirc
+
+# Marimo
+marimo/_static/
+marimo/_lsp/
+__marimo__/
+
+# Backup files
+*.bak
